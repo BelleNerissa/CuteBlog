@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <script src="/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="js/fakeDb.js"></script>
+    <script defer src="/js/script.js"></script>
+    <title>Blog de tudo</title>
+  </head>
+  <body class="bg">
+    <header>
+            <nav class="navbar bg-info " >
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                        <a class="navbar-brand navbar-dark" href="#">CuteBlog</a>
+                      </div>
+                      <ul class="nav navbar-nav">
+                        <li><a href="#">Codigo no GitHub</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+    </header>
+    <section class="container">
+      <aside>
+        <button type="button" class="btn btn-primary  btn-block my-5" data-toggle="modal" data-target="#adicionarPostagemModal">
+         <b>Adicionar postagem</b> 
+        </button>
+      </aside>
+      <main>
+        <section id="postagens"></section>
+      </main>
+    </section>
+    <section>
+      <div id="adicionarPostagemModal" class="modal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Adicionar Postagem</h5>
+              <button type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <form id="adicionarPostagem">
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="tituloDaPostagem">Título:</label>
+                  <input id="tituloDaPostagem" type="text" class="form-control" placeholder="xxx" />
+                </div>
+                <div class="form-group">
+                  <label for="textoDaPostagem">Imagem:</label>
+                  <input id="imagemDaPostagem" type="file" class="form-control" accept="image/*" />
+                </div>
+                <div class="form-group">
+                  <label for="textoDaPostagem">Texto:</label>
+                  <textarea id="textoDaPostagem" class="form-control" rows="3" placeholder="xxx"></textarea>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-success">Adicionar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

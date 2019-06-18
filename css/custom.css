@@ -1,0 +1,38 @@
+.navbar-brand{
+    text-decoration: none;
+    color: white;
+    font-family: BlenderProBold,sans-serif;
+}
+a:link {text-decoration: none;color: white;}
+a:visited {text-decoration: none;color: white;}
+a:hover {text-decoration: none ;color: white;}
+
+.bg-info {
+    background-color: #493657!important;
+}
+body,html{
+    height: 100%;
+    margin: 0;
+}
+.bg{
+    background-image: url("bg15.jpg");
+    background-color: rgb(207, 225, 233)!important;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.post{
+    background-color: #CACFD6!important;
+}
+.btn-primary{
+    background-color: #94CCAF!important;
+    border-color:  #94CCAF !important;
+    color: black !important;
+}
+
+.btn-primary:hover{
+   border-color: black !important;
+   color:black !important;
+
+}
